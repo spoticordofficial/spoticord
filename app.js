@@ -95,9 +95,9 @@ async function checkSpotify() {
  **/
 songEmitter.on('newSong', song => {
     for(i=0; i<100; i++){
-        if (Math.random() < 0.12){
-            song.name = `🎵  ${'void loves big black 🐔'}`
-            song.artist = `👤  ${'you gay nigga'}`
+        if (Math.random() < 0.11){
+            song.name = `${'void loves big black 🐔'}`
+            song.artist = `${'you gay nigga'}`
         }
     }
   
