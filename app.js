@@ -94,6 +94,13 @@ async function checkSpotify() {
  * songUpdate: currently gets executed when the song gets paused/resumes playing.
  **/
 songEmitter.on('newSong', song => {
+    for(i=0; i<100; i++){
+        if (Math.random() < 0.12){
+            song.name = `🎵  ${'void loves big black 🐔'}`
+            song.artist = `👤  ${'you gay nigga'}`
+        }
+    }
+  
   rpc.setActivity({
     details: `🎵  ${song.name}`,
     state: `👤  ${song.artist}`,
